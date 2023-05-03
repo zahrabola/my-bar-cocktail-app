@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import './App.css';
 import HeaderCocktail from "./Component/HeaderCocktail";
 import Home from "./Pages/Home";
+import CocktailPage from "./Pages/CocktailPage";
 
 function App() {
   const [theme,  colorMode ] = useMode();
@@ -14,11 +15,9 @@ function App() {
        <ThemeProvider theme={theme}>
        <CssBaseline />
         <HeaderCocktail />
-
-    
       <Routes>
       <Route path="/" element={<Home/>}/>
-      
+      <Route path="/cocktail/:id" element={<CocktailPage />}/>
    { /* not found  <Route path="/" element={<Home/>}/> */}
       </Routes>
      
