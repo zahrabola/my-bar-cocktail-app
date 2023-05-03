@@ -1,6 +1,6 @@
 import {ColorContextMode, tokens} from "../Theme";
 import { useContext } from "react";
-import { Box, IconButton, useTheme } from "@mui/material";
+import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -18,14 +18,20 @@ return (
     <IconButton type="button" sx={{p: 1}}>
         <HomeOutlinedIcon style={{ fill: colors.greenAccent[600] }}/>
     </IconButton>
-    </Box>      
+    </Box>     
+    <Typography   variant="h5"
+              fontWeight="600"
+              color={colors.greenAccent[600]}>
+    Cocktail Recipes 
+    </Typography>
+    
       {/* icons - conditional rendering*/}
       <Box display="flex">
         <IconButton onClick={colorMode.togglecolorMode}>
             {theme.palette.mode === 'dark' ? (
-               <DarkModeOutlinedIcon style={{ fill: colors.greenAccent[400] }} /> 
+               <DarkModeOutlinedIcon style={{ fill: colors.greenAccent[600] }} /> 
             ) : (
-                <LightModeOutlinedIcon style={{ fill: colors.greenAccent[800] }} />
+                <LightModeOutlinedIcon style={{ fill: colors.greenAccent[700] }} />
             )}
            
         </IconButton> 
