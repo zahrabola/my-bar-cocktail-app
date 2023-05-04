@@ -19,8 +19,8 @@ return (
         <HomeOutlinedIcon style={{ fill: colors.greenAccent[600] }}/>
     </IconButton>
     </Box>     
-    <Typography   variant="h5"
-              fontWeight="600"
+    <Typography   variant="h3"
+              fontWeight="400"
               color={colors.greenAccent[600]}>
     Cocktail Recipes 
     </Typography>
@@ -31,7 +31,7 @@ return (
             {theme.palette.mode === 'dark' ? (
                <DarkModeOutlinedIcon style={{ fill: colors.greenAccent[600] }} /> 
             ) : (
-                <LightModeOutlinedIcon style={{ fill: colors.greenAccent[700] }} />
+                <LightModeOutlinedIcon style={{ fill: colors.greenAccent[600] }} />
             )}
            
         </IconButton> 

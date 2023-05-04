@@ -1,13 +1,13 @@
-
+import Search from "../Component/Search";
+import { Container} from "@mui/material";
 const Home = () => {
     return(
       
-        <div>  <p>Home</p>
-        <p>search</p>
-        <p>Conatiner 
-            cocktail list
-        </p>
-        
+        <div>  
+     <Search/>
+      <Container>
+        cocktail list 
+      </Container>
         </div>
      
 
