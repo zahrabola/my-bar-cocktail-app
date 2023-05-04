@@ -6,17 +6,20 @@ const CocktailList = ({ cocktails, loading, initial }) => {
     return <h1> Type in a cocktail name in search box. </h1>;
   } else {
     if (loading) {
-      return <h1> loading </h1>;
+      return <h1> Loading </h1>;
     } else {
-      return (
-        <Box>
-          {cocktails.map((element) => {
-            return <Cocktail {...element} />;
-          })}
-        </Box>
-      );
+      if (!cocktails.length) {
+        return <h1> Not a cocktail, try again </h1>;;
+      } else {
+        return (
+          <Box >
+            {cocktails.map((element, index) => {
+              return <Cocktail {...element} key={ index }/>;
+            })}
+          </Box>
+        );
+      }
     }
   }
 };
-
 export default CocktailList;
