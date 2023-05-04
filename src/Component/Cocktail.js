@@ -15,23 +15,24 @@ const Cocktail = ({ name, alcoholic, image }) => {
       <Box >
         <Card
           sx={{
-            maxWidth: 345,
+            maxWidth: 365,
             border: 3,
             borderRadius: 5,
-            borderColor: colors.greenAccent[600],
+            borderColor: colors.orangeAccent[500],
+            backgroundColor: colors.orangeAccent[500]
           }}
         >
-          <CardMedia sx={{ height: 360 }} image={image} title="drinks" />
+          <CardMedia sx={{ height: 360, margin:"5px" ,  borderRadius: 5  }} image={image} title="drinks" />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h3"  fontWeight="500"component="div">
               {name}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2"  fontWeight="300">
               {alcoholic}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
+
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>

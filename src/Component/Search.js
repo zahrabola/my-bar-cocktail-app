@@ -7,14 +7,14 @@ import React, { useRef } from 'react';
 const Search = ({setQuery}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const searchValue = useRef('');
+  const queryValue = useRef('');
 
  const handleSubmit = (event) => {
     event.preventDefault()
  }
 const queryCocktail = () => {
-    setQuery(searchValue.current.value);
-    window.sessionStorage.setItem('query', searchValue.current.value);
+    setQuery(queryValue.current.value);
+    window.sessionStorage.setItem('query', queryValue.current.value);
 }
 
 
@@ -37,7 +37,7 @@ const queryCocktail = () => {
           id="search"
           label="Outlined"
           variant="outlined"
-          inputRef={searchValue}
+          inputRef={queryValue}
           onChange={queryCocktail}
         />
         <IconButton type="button" sx={{ p: 1 }}>

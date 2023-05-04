@@ -92,7 +92,7 @@ const Home = () => {
           setLoading(false);
         }
         getDrinks();
-      }, 300);
+      }, 500);
       return () => clearTimeout(timer);
     }    
   }, [query]);
