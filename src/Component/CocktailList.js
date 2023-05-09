@@ -1,15 +1,18 @@
 import React from "react";
 import { Grid, Fade } from "@mui/material";
+import NoDrinksIcon from '@mui/icons-material/NoDrinks';
+import LiquorIcon from '@mui/icons-material/Liquor';
 import Cocktail from "./Cocktail";
 const CocktailList = ({ cocktails, loading, initial }) => {
   if (initial) {
-    return <h1> Type in a cocktail name in search box. </h1>;
+    return <h1> Type in a cocktail name in search box. <LiquorIcon /> </h1>;
   } else {
     if (loading) {
       return <h1> Loading </h1>;
     } else {
       if (!cocktails.length) {
-        return <h1> Not a cocktail, try again </h1>;
+        return <h1> Not a cocktail, try again <NoDrinksIcon /> </h1>
+       ;;
       } else {
         return (
           <Grid
