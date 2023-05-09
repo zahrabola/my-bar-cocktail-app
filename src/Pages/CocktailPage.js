@@ -41,10 +41,10 @@ const CocktailPage = () => {
                   display: "flex",
                   alignItems:"center",
                 }}>
-                    <Box padding={2}><LabelIcon style={{ fill: colors.greenAccent[600] }}/><div>Category</div></Box>
-                    <Box padding={2}><LocalCafeIcon  style={{ fill: colors.greenAccent[600] }} /> <div>non alcoholic</div></Box>
-                    <Box padding={2}><LocalBarIcon  style={{ fill: colors.greenAccent[600] }} /><div>alcoholic </div></Box>
-                    <Box padding={2}> <ShoppingBasketIcon  style={{ fill: colors.greenAccent[600] }}/><div>ingredients</div></Box>
+                    <Box padding={2}><LabelIcon style={{ fill: colors.greenAccent[600] }}/><Typography variant="h6" color={colors.grey[400]} >Category</Typography></Box>
+                    <Box padding={2}><LocalCafeIcon  style={{ fill: colors.greenAccent[600] }} /> <Typography variant="h6" color={colors.grey[400]} >non alcoholic</Typography></Box>
+                    <Box padding={2}><LocalBarIcon  style={{ fill: colors.greenAccent[600] }} /><Typography variant="h6" color={colors.grey[400]} >alcoholic </Typography></Box>
+                    <Box padding={2}> <ShoppingBasketIcon  style={{ fill: colors.greenAccent[600] }}/><Typography variant="h6" color={colors.grey[400]} >ingredients</Typography></Box>
                 </Typography>
             
             </Grid>
@@ -68,10 +68,11 @@ const CocktailPage = () => {
                     flexDirection:"column",
                     padding: "0 0 0 12px !important",
                 }}>
-                  <Typography>ingredients</Typography>
+                  <Typography variant="h4" color={colors.grey[400]}>ingredients</Typography>
                   <div>
                     <Typography>iterate</Typography>
                   </div>
+                  <Typography variant="h4" color={colors.grey[400]}>measure</Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -81,9 +82,9 @@ const CocktailPage = () => {
                 {borderRadius: "12",
                    padding: "12",
     boxShadow: "0 5px 15px -5px rgba(0, 0, 0, 0.2)",}}>
-                <Typography>Served in</Typography>
+                <Typography variant="h4" color={colors.grey[400]} >Served in</Typography>
                 <div>Glass</div>
-                <Typography>instruction</Typography>
+                <Typography variant="h4" color={colors.grey[400]}>instruction</Typography>
                 <div sx={{
                         marginBottom: "12px",
                 }}>instruction</div>
