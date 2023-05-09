@@ -4,7 +4,7 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-
+import { Link as RouterLink } from 'react-router-dom';
 
 const HeaderCocktail = () => {
     const theme = useTheme();
@@ -15,7 +15,7 @@ return (
     <Box display="flex" justifyContent="space-between" p={3} backgroundColor={colors.orangeAccent[500]}>
     {/*search bar */}
     <Box display="flex" borderRadius="5px" >
-    <IconButton type="button" sx={{p: 1}}>
+    <IconButton type="button" sx={{p: 1}}  component={RouterLink} to="/">
         <HomeOutlinedIcon style={{ fill: colors.greenAccent[600] }}/>
     </IconButton>
     </Box>     

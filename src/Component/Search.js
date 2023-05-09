@@ -25,10 +25,12 @@ const queryCocktail = () => {
         display="flex"
         flexWrap="wrap"
         m="30px"
+        p="5px"
         sx={{
           border: 3,
-          borderRadius: 5,
+          borderRadius: 15,
           borderColor: colors.greenAccent[600],
+        
         }}
       >
         <InputBase
