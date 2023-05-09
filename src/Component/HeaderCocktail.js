@@ -30,9 +30,9 @@ return (
       <Box display="flex">
         <IconButton onClick={colorMode.togglecolorMode}>
             {theme.palette.mode === 'dark' ? (
-               <DarkModeOutlinedIcon style={{ fill: colors.greenAccent[600] }} /> 
+               <DarkModeOutlinedIcon style={{ fill: colors.greenAccent[700] }} /> 
             ) : (
-                <LightModeOutlinedIcon style={{ fill: colors.greenAccent[600] }} />
+                <LightModeOutlinedIcon style={{ fill: colors.greenAccent[500] }} />
             )}
            
         </IconButton> 
