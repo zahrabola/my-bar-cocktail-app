@@ -275,18 +275,18 @@ const CocktailPage = () => {
                               sx={{
                                 display: "flex",
                                 flexDirection: "column",
-                                padding: "0 0 0 12px !important",
+                                padding: "10px 12px 10px 12px !important",
                               }}
                             >
-                              <Typography variant="h4" color={colors.grey[400]}>
+                              <Typography variant="h6" color={colors.grey[400]}>
                                 Ingredients {iterate + 1}
                               </Typography>
                               <div>
-                                <Typography>{element}</Typography>
+                                <Typography  variant="h5">{element}</Typography>
                               </div>
                               {measure[iterate] ? (
                                 <Typography
-                                  variant="h4"
+                                  variant="h6"
                                   color={colors.grey[400]}
                                 >
                                   {measure[iterate]}
@@ -299,27 +299,29 @@ const CocktailPage = () => {
                     })
                   : null}
                 {/* */}
-                <Grid item xs={12}>
+                <Grid item xs={12} >
                   <Card
                     sx={{
                       borderRadius: "12",
                       padding: "12",
                       boxShadow: "0 5px 15px -5px rgba(0, 0, 0, 0.2)",
+
+                  
                     }}
                   >
                     {glass ? (
                       <div>
-                        <Typography variant="h4" color={colors.grey[400]}>
+                        <Typography variant="h6" color={colors.grey[400]}>
                           Served in
                         </Typography>
-                        <Typography>{glass}</Typography>
+                        <Typography variant="h5">{glass}</Typography>
                       </div>
                     ) : null}
 
-                    <Typography variant="h4" color={colors.grey[400]}>
+                    <Typography variant="h6" color={colors.grey[400]}>
                       instruction
                     </Typography>
-                    <Typography
+                    <Typography variant="h5"
                       sx={{
                         marginBottom: "12px",
                       }}
