@@ -8,7 +8,7 @@ const CocktailList = ({ cocktails, loading, initial }) => {
     return <h1> Type in a cocktail name in search box. <LiquorIcon /> </h1>;
   } else {
     if (loading) {
-      return <h1> Loading </h1>;
+      return <h1> Loading....</h1>;
     } else {
       if (!cocktails.length) {
         return <h1> Not a cocktail, try again <NoDrinksIcon /> </h1>

@@ -51,7 +51,7 @@ const Cocktail = ({ name, alcoholic, image, id }) => {
                 borderColor: colors.greenAccent[500],
                 backgroundColor: colors.greenAccent[500],
               }}
-              textAlign="center"
+             
               component={RouterLink}
               to={`/cocktail/${id}`}
               variant="outlined"

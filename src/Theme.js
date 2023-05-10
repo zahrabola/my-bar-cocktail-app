@@ -212,7 +212,7 @@ export const SettingTheme = (mode) => {
             fontFamily: ["Noto Sans JP", "sans-serif"].join(","),
             fontSize: 16,
           },
-          h6: {
+         h6 : {
             fontFamily: ["Noto Sans JP", "sans-serif"].join(","),
             fontSize: 14,
           },
