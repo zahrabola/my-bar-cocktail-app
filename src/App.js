@@ -18,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cocktail/:id" element={<CocktailPage />} />
-          {/* not found  <Route path="/" element={<Home/>}/> */}
         </Routes>
       </ThemeProvider>
     </ColorContextMode.Provider>

@@ -334,8 +334,8 @@ const CocktailPage = () => {
             </Grid>
           </Grid>
 
-          {/* */}
-          <div>Back home </div>
+          {/*   <div>Back home </div> */}
+       
         </Container>
       );
     }
