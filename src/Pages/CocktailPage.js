@@ -158,13 +158,17 @@ const CocktailPage = () => {
         <Container maxWidth="lg" m="20px">
           <Grid container spacing={4}>
             <Grid item xs={12} md={7}>
-            <CardMedia
-            sx={{ height: 660, margin: "5px", borderRadius: 5, marginTop:"20px" }}
-            image={image}
-            alt={name}
-            title="drinks"
-          />
-             
+              <CardMedia
+                sx={{
+                  height: 660,
+                  margin: "5px",
+                  borderRadius: 5,
+                  marginTop: "20px",
+                }}
+                image={image}
+                alt={name}
+                title="drinks"
+              />
             </Grid>
             <Grid item xs={12} md={5}>
               <Grid container spacing={4}>
@@ -181,10 +185,13 @@ const CocktailPage = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Box padding={2}  sx={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}>
+                      <Box
+                        padding={2}
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
                         <LabelIcon style={{ fill: colors.greenAccent[600] }} />
                         <Typography variant="h4" color={colors.grey[400]}>
                           {category}
@@ -202,10 +209,13 @@ const CocktailPage = () => {
                       }}
                     >
                       {alcoholic === "Non alcoholic" ? (
-                        <Box padding={2}  sx={{
-                          display: "flex",
-                          alignItems: "center",
-                        }}>
+                        <Box
+                          padding={2}
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
                           <LocalCafeIcon
                             style={{ fill: colors.greenAccent[600] }}
                           />{" "}
@@ -214,14 +224,17 @@ const CocktailPage = () => {
                           </Typography>
                         </Box>
                       ) : (
-                        <Box padding={2}  sx={{
-                          display: "flex",
-                          alignItems: "center",
-                        }}>
+                        <Box
+                          padding={2}
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
                           <LocalBarIcon
                             style={{ fill: colors.greenAccent[600] }}
                           />
-                          <Typography  variant="h4" color={colors.grey[400]}>
+                          <Typography variant="h4" color={colors.grey[400]}>
                             {alcoholic}{" "}
                           </Typography>
                         </Box>
@@ -243,9 +256,9 @@ const CocktailPage = () => {
                           style={{ fill: colors.greenAccent[600] }}
                         />
                       </Box>
-                   
+
                       <Typography variant="" color={colors.grey[400]}>
-                      {ingredients.length}
+                        {ingredients.length}
                         {ingredients.length > 1
                           ? " Ingredients "
                           : " Ingredient"}
@@ -268,9 +281,8 @@ const CocktailPage = () => {
                               alignItems: "center",
                             }}
                           >
+                            {/* <CardMedia image={`www.thecocktaildb.com/images/ingredients/${element}-Small.png`}  title={element} alt="/"/> */}
 
-                           {/* <CardMedia image={`www.thecocktaildb.com/images/ingredients/${element}-Small.png`}  title={element} alt="/"/> */}
-                          
                             <CardContent
                               sx={{
                                 display: "flex",
@@ -282,7 +294,7 @@ const CocktailPage = () => {
                                 Ingredients {iterate + 1}
                               </Typography>
                               <div>
-                                <Typography  variant="h5">{element}</Typography>
+                                <Typography variant="h5">{element}</Typography>
                               </div>
                               {measure[iterate] ? (
                                 <Typography
@@ -299,31 +311,50 @@ const CocktailPage = () => {
                     })
                   : null}
                 {/* */}
-                <Grid item xs={12} >
+                <Grid item xs={12}>
                   <Card
                     sx={{
                       borderRadius: "12",
                       padding: "12",
                       boxShadow: "0 5px 15px -5px rgba(0, 0, 0, 0.2)",
-
-                  
                     }}
                   >
                     {glass ? (
                       <div>
-                        <Typography variant="h6" color={colors.grey[400]}>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[400]}
+                          sx={{
+                            padding: "10px 0 0 10px",
+                          }}
+                        >
                           Served in
                         </Typography>
-                        <Typography variant="h5">{glass}</Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            padding: "10px 0 0 10px",
+                          }}
+                        >
+                          {glass}
+                        </Typography>
                       </div>
                     ) : null}
 
-                    <Typography variant="h6" color={colors.grey[400]}>
+                    <Typography
+                      variant="h6"
+                      color={colors.grey[400]}
+                      sx={{
+                        padding: "10px",
+                      }}
+                    >
                       instruction
                     </Typography>
-                    <Typography variant="h5"
+                    <Typography
+                      variant="h5"
                       sx={{
                         marginBottom: "12px",
+                        padding: "10px",
                       }}
                     >
                       {instructions}
@@ -335,7 +366,6 @@ const CocktailPage = () => {
           </Grid>
 
           {/*   <div>Back home </div> */}
-       
         </Container>
       );
     }
