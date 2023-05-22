@@ -186,13 +186,17 @@ const CocktailPage = () => {
                       }}
                     >
                       <Box
-                        padding={2}
                         sx={{
                           display: "flex",
                           alignItems: "center",
                         }}
                       >
-                        <LabelIcon style={{ fill: colors.greenAccent[600] }} />
+                        <Box padding={2}>
+                          <LabelIcon
+                            style={{ fill: colors.greenAccent[600] }}
+                          />
+                        </Box>
+
                         <Typography variant="h4" color={colors.grey[400]}>
                           {category}
                         </Typography>
@@ -210,30 +214,34 @@ const CocktailPage = () => {
                     >
                       {alcoholic === "Non alcoholic" ? (
                         <Box
-                          padding={2}
                           sx={{
                             display: "flex",
                             alignItems: "center",
                           }}
                         >
-                          <LocalCafeIcon
-                            style={{ fill: colors.greenAccent[600] }}
-                          />{" "}
+                          <Box padding={2}>
+                            <LocalCafeIcon
+                              style={{ fill: colors.greenAccent[600] }}
+                            />{" "}
+                          </Box>
+
                           <Typography variant="h4" color={colors.grey[400]}>
                             {alcoholic}
                           </Typography>
                         </Box>
                       ) : (
                         <Box
-                          padding={2}
                           sx={{
                             display: "flex",
                             alignItems: "center",
                           }}
                         >
-                          <LocalBarIcon
-                            style={{ fill: colors.greenAccent[600] }}
-                          />
+                          <Box padding={2}>
+                            <LocalBarIcon
+                              style={{ fill: colors.greenAccent[600] }}
+                            />
+                          </Box>
+
                           <Typography variant="h4" color={colors.grey[400]}>
                             {alcoholic}{" "}
                           </Typography>
